@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.proyectopooo.Reportes">
+   <children>
+      <Pane layoutX="-6.0" prefHeight="400.0" prefWidth="606.0" style="-fx-background-color: #008db1;">
+         <children>
+            <Label layoutX="179.0" layoutY="14.0" text="Reporte de asistencia" textFill="WHITE">
+               <font>
+                  <Font name="System Bold Italic" size="25.0" />
+               </font>
+            </Label>
+            <Button fx:id="salir" layoutX="545.0" layoutY="10.0" mnemonicParsing="false" onAction="#regresarMenu" prefHeight="20.0" prefWidth="61.0" style="-fx-background-color: &quot;red&quot;; -fx-border-radius: 40px;" text="x" textFill="WHITE">
+               <font>
+                  <Font size="21.0" />
+               </font>
+            </Button>
+            <TableView fx:id="tabla1" layoutX="65.0" layoutY="66.0" prefHeight="284.0" prefWidth="500.0">
+              <columns>
+                <TableColumn fx:id="tablenombre" prefWidth="106.0" text="nombre" />
+                <TableColumn fx:id="tableMatricula" prefWidth="117.0" text="matricula" />
+                  <TableColumn fx:id="tableStatus" prefWidth="118.0" text="estatus" />
+                  <TableColumn fx:id="fechas" prefWidth="158.0" text="Fecha de la asistencia" />
+              </columns>
+            </TableView>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
